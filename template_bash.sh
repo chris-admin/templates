@@ -29,6 +29,9 @@ my_function
 # if function
 
 if [ $# == 0 ] ; then
-    echo $USAGE
-    exit 1;
+        echo "no parameter"
+        exit 1;
+else
+        echo "got some values"
+        exit 0;
 fi
