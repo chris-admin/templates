@@ -1,16 +1,21 @@
 #!/bin/bash
+# ------------------------------------------------------
+# Authur          Title
+#
 # a simple template, please use this lines to
 # write some information about this script
-# chris 16/08/2019
+#
+# Dependency:
+#   https://github.com/
 
 
-# variables 
+# variable 
 var1=hello
 echo $var1
 
+# writing cmd ouput to variable
 pingresult=$(ping 8.8.8.8 -c 1)
 echo $pingresult
-
 
 # functions
 var2=google.com
@@ -21,4 +26,9 @@ my_function () {
 
 my_function
 
+# if function
 
+if [ $# == 0 ] ; then
+    echo $USAGE
+    exit 1;
+fi
